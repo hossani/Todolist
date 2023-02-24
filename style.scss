@@ -1,0 +1,96 @@
+$addbtn: rgba(79, 77, 182, 0.986);
+$removebtn: rgba(250, 0, 0.5);
+$textcolor: rgb(255, 255, 255);
+$backgroundcolor: rgba(119, 118, 163, 0.986);
+$margin1: 20px;
+$margin2: 20px;
+$backgroundcolor2: rgba(227, 227, 233, 0.986);
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(199, 179, 179);
+}
+.divParent {
+  box-shadow: 10px 10px 10px rgb(221, 214, 214);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  margin-top: 5%;
+  margin-left: 33%;
+  border: 1px solid rgba(62, 61, 122, 0.986);
+  border-radius: 20px;
+  .title {
+    text-align: center;
+    background-color: $backgroundcolor;
+    color: $textcolor;
+    padding: 10px 20px;
+  }
+  .divChild {
+    background-color: $backgroundcolor;
+    display: flex;
+    justify-content: flex-start;
+
+    input {
+      width: 100%;
+      margin-right: 3px;
+      margin-bottom: $margin1;
+      margin-left: $margin2;
+    }
+    button {
+      background-color: $addbtn;
+      cursor: pointer;
+      color: $textcolor;
+      font-size: 12px;
+      font-weight: bold;
+      border: 2px solid white;
+      padding: 3px;
+      margin-bottom: $margin1;
+      margin-right: $margin2;
+    }
+  }
+  .TASKS {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    h1 {
+      color: $backgroundcolor;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      display: flex;
+      flex-direction: column;
+      div {
+        padding: 10px;
+        background-color: $backgroundcolor2;
+        border: 3px solid $backgroundcolor2;
+        display: inline-flex;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        input {
+          margin-left: 5px;
+        }
+        h2 {
+          margin-left: 10px;
+          font-size: 18px;
+          font-weight: lighter;
+        }
+        button {
+          margin-left: auto;
+          background-color: rgb(177, 78, 207);
+          color: white;
+          font-weight: bold;
+          padding: 4px;
+        }
+      }
+    }
+  }
+}
